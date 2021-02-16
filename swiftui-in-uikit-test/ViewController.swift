@@ -25,8 +25,9 @@ class CustomViewController: UIViewController {
         })
     }
 }
+
 struct VVView: View {
-    var body : some View {
+    var body: some View {
         HStack {
             Text("Left")
             Rectangle().foregroundColor(.blue)
@@ -39,6 +40,7 @@ struct VVView: View {
 class Env: ObservableObject {
     @Published var navContoller: UINavigationController? = nil
     @Published var tabController: UITabBarController? = nil
+    @Published var view: UIViewController? = nil
 }
 
 class ViewController: UIViewController {
@@ -80,15 +82,16 @@ class ViewController: UIViewController {
 //
 //            make.center.equalTo(view)
 //        }
-        
-       
+
         let env = Env()
         env.navContoller = navigationController
         env.tabController = tabBarController
+
+        env.view = self
         let hostVc = UIHostingController(rootView: NavigationControllerTestView().environmentObject(env))
         view.backgroundColor = .systemBackground
         let sview = hostVc.view!
-        
+
         title = "Navigation Test"
         navigationController?.navigationBar.prefersLargeTitles = true
         view.addSubview(sview)
@@ -96,7 +99,7 @@ class ViewController: UIViewController {
             make.width.equalTo(view)
             make.center.equalTo(view)
             make.height.equalTo(view)
-            
+
         })
     }
 

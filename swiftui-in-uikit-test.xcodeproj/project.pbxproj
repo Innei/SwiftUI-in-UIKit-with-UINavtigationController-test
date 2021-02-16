@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0CD47425D534870035BC29 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0B0CD47325D534870035BC29 /* icon.icns */; };
+		0B0CD47625D534870035BC29 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CD47525D534870035BC29 /* ShareViewController.swift */; };
+		0B0CD47925D534870035BC29 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0CD47725D534870035BC29 /* ShareViewController.xib */; };
+		0B0CD48B25D5364D0035BC29 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CD48A25D5364D0035BC29 /* ShareViewController.swift */; };
+		0B0CD48E25D5364D0035BC29 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0CD48C25D5364D0035BC29 /* MainInterface.storyboard */; };
+		0B0CD49225D5364D0035BC29 /* ios-share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B0CD48825D5364D0035BC29 /* ios-share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BD358A125CFB6D500D8AD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD358A025CFB6D500D8AD1E /* AppDelegate.swift */; };
 		0BD358A325CFB6D500D8AD1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD358A225CFB6D500D8AD1E /* SceneDelegate.swift */; };
 		0BD358A525CFB6D500D8AD1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD358A425CFB6D500D8AD1E /* ViewController.swift */; };
@@ -16,9 +22,46 @@
 		0BD358B625CFB6E700D8AD1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD358B525CFB6E700D8AD1E /* ContentView.swift */; };
 		0BD358BA25CFB98600D8AD1E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD358B925CFB98600D8AD1E /* SnapKit */; };
 		0BD358BD25CFFEEC00D8AD1E /* NavigationControllerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD358BC25CFFEEC00D8AD1E /* NavigationControllerTestView.swift */; };
+		0BF729D225D273C400A18064 /* TestIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF729D125D273C400A18064 /* TestIView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B0CD49025D5364D0035BC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BD3589525CFB6D500D8AD1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B0CD48725D5364D0035BC29;
+			remoteInfo = "ios-share";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B0CD49625D5364D0035BC29 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B0CD49225D5364D0035BC29 /* ios-share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0B0CD47125D534870035BC29 /* test-share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "test-share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B0CD47325D534870035BC29 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		0B0CD47525D534870035BC29 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		0B0CD47825D534870035BC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		0B0CD47A25D534870035BC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B0CD47B25D534870035BC29 /* test_share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test_share.entitlements; sourceTree = "<group>"; };
+		0B0CD48125D5360C0035BC29 /* swiftui-in-uikit-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-in-uikit-test.entitlements"; sourceTree = "<group>"; };
+		0B0CD48825D5364D0035BC29 /* ios-share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ios-share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B0CD48A25D5364D0035BC29 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		0B0CD48D25D5364D0035BC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0B0CD48F25D5364D0035BC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B0CD49A25D536540035BC29 /* ios-share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-share.entitlements"; sourceTree = "<group>"; };
 		0BD3589D25CFB6D500D8AD1E /* swiftui-in-uikit-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-in-uikit-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD358A025CFB6D500D8AD1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD358A225CFB6D500D8AD1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,9 +72,24 @@
 		0BD358AE25CFB6D700D8AD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD358B525CFB6E700D8AD1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BD358BC25CFFEEC00D8AD1E /* NavigationControllerTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerTestView.swift; sourceTree = "<group>"; };
+		0BF729D125D273C400A18064 /* TestIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B0CD46E25D534870035BC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B0CD48525D5364D0035BC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BD3589A25CFB6D500D8AD1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +101,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0CD47225D534870035BC29 /* test-share */ = {
+			isa = PBXGroup;
+			children = (
+				0B0CD47325D534870035BC29 /* icon.icns */,
+				0B0CD47525D534870035BC29 /* ShareViewController.swift */,
+				0B0CD47725D534870035BC29 /* ShareViewController.xib */,
+				0B0CD47A25D534870035BC29 /* Info.plist */,
+				0B0CD47B25D534870035BC29 /* test_share.entitlements */,
+			);
+			path = "test-share";
+			sourceTree = "<group>";
+		};
+		0B0CD48925D5364D0035BC29 /* ios-share */ = {
+			isa = PBXGroup;
+			children = (
+				0B0CD49A25D536540035BC29 /* ios-share.entitlements */,
+				0B0CD48A25D5364D0035BC29 /* ShareViewController.swift */,
+				0B0CD48C25D5364D0035BC29 /* MainInterface.storyboard */,
+				0B0CD48F25D5364D0035BC29 /* Info.plist */,
+			);
+			path = "ios-share";
+			sourceTree = "<group>";
+		};
 		0BD3589425CFB6D500D8AD1E = {
 			isa = PBXGroup;
 			children = (
 				0BD3589F25CFB6D500D8AD1E /* swiftui-in-uikit-test */,
+				0B0CD47225D534870035BC29 /* test-share */,
+				0B0CD48925D5364D0035BC29 /* ios-share */,
 				0BD3589E25CFB6D500D8AD1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				0BD3589D25CFB6D500D8AD1E /* swiftui-in-uikit-test.app */,
+				0B0CD47125D534870035BC29 /* test-share.appex */,
+				0B0CD48825D5364D0035BC29 /* ios-share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +147,10 @@
 		0BD3589F25CFB6D500D8AD1E /* swiftui-in-uikit-test */ = {
 			isa = PBXGroup;
 			children = (
+				0B0CD48125D5360C0035BC29 /* swiftui-in-uikit-test.entitlements */,
 				0BD358A025CFB6D500D8AD1E /* AppDelegate.swift */,
 				0BD358B525CFB6E700D8AD1E /* ContentView.swift */,
+				0BF729D125D273C400A18064 /* TestIView.swift */,
 				0BD358A225CFB6D500D8AD1E /* SceneDelegate.swift */,
 				0BD358A425CFB6D500D8AD1E /* ViewController.swift */,
 				0BD358A625CFB6D500D8AD1E /* Main.storyboard */,
@@ -78,6 +165,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B0CD47025D534870035BC29 /* test-share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B0CD47E25D534870035BC29 /* Build configuration list for PBXNativeTarget "test-share" */;
+			buildPhases = (
+				0B0CD46D25D534870035BC29 /* Sources */,
+				0B0CD46E25D534870035BC29 /* Frameworks */,
+				0B0CD46F25D534870035BC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test-share";
+			productName = "test-share";
+			productReference = 0B0CD47125D534870035BC29 /* test-share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0B0CD48725D5364D0035BC29 /* ios-share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B0CD49325D5364D0035BC29 /* Build configuration list for PBXNativeTarget "ios-share" */;
+			buildPhases = (
+				0B0CD48425D5364D0035BC29 /* Sources */,
+				0B0CD48525D5364D0035BC29 /* Frameworks */,
+				0B0CD48625D5364D0035BC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-share";
+			productName = "ios-share";
+			productReference = 0B0CD48825D5364D0035BC29 /* ios-share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0BD3589C25CFB6D500D8AD1E /* swiftui-in-uikit-test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BD358B125CFB6D700D8AD1E /* Build configuration list for PBXNativeTarget "swiftui-in-uikit-test" */;
@@ -85,10 +206,12 @@
 				0BD3589925CFB6D500D8AD1E /* Sources */,
 				0BD3589A25CFB6D500D8AD1E /* Frameworks */,
 				0BD3589B25CFB6D500D8AD1E /* Resources */,
+				0B0CD49625D5364D0035BC29 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B0CD49125D5364D0035BC29 /* PBXTargetDependency */,
 			);
 			name = "swiftui-in-uikit-test";
 			packageProductDependencies = (
@@ -104,9 +227,15 @@
 		0BD3589525CFB6D500D8AD1E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					0B0CD47025D534870035BC29 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0B0CD48725D5364D0035BC29 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					0BD3589C25CFB6D500D8AD1E = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -129,11 +258,30 @@
 			projectRoot = "";
 			targets = (
 				0BD3589C25CFB6D500D8AD1E /* swiftui-in-uikit-test */,
+				0B0CD47025D534870035BC29 /* test-share */,
+				0B0CD48725D5364D0035BC29 /* ios-share */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B0CD46F25D534870035BC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0CD47925D534870035BC29 /* ShareViewController.xib in Resources */,
+				0B0CD47425D534870035BC29 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B0CD48625D5364D0035BC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0CD48E25D5364D0035BC29 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BD3589B25CFB6D500D8AD1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +295,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B0CD46D25D534870035BC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0CD47625D534870035BC29 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B0CD48425D5364D0035BC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0CD48B25D5364D0035BC29 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BD3589925CFB6D500D8AD1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,13 +319,38 @@
 				0BD358A125CFB6D500D8AD1E /* AppDelegate.swift in Sources */,
 				0BD358B625CFB6E700D8AD1E /* ContentView.swift in Sources */,
 				0BD358BD25CFFEEC00D8AD1E /* NavigationControllerTestView.swift in Sources */,
+				0BF729D225D273C400A18064 /* TestIView.swift in Sources */,
 				0BD358A325CFB6D500D8AD1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0B0CD49125D5364D0035BC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B0CD48725D5364D0035BC29 /* ios-share */;
+			targetProxy = 0B0CD49025D5364D0035BC29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0B0CD47725D534870035BC29 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B0CD47825D534870035BC29 /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+		0B0CD48C25D5364D0035BC29 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B0CD48D25D5364D0035BC29 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		0BD358A625CFB6D500D8AD1E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -181,6 +370,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B0CD47C25D534870035BC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "test-share/test_share.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7VYQTBFBS5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "test-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "ren.innei.test-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0B0CD47D25D534870035BC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "test-share/test_share.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7VYQTBFBS5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "test-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "ren.innei.test-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0B0CD49425D5364D0035BC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ios-share/ios-share.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VYQTBFBS5;
+				INFOPLIST_FILE = "ios-share/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ren.innei.swiftui-in-uikit-test.ios-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B0CD49525D5364D0035BC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ios-share/ios-share.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VYQTBFBS5;
+				INFOPLIST_FILE = "ios-share/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ren.innei.swiftui-in-uikit-test.ios-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0BD358AF25CFB6D700D8AD1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -300,8 +577,10 @@
 		0BD358B225CFB6D700D8AD1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-in-uikit-test/swiftui-in-uikit-test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VYQTBFBS5;
 				INFOPLIST_FILE = "swiftui-in-uikit-test/Info.plist";
@@ -319,8 +598,10 @@
 		0BD358B325CFB6D700D8AD1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-in-uikit-test/swiftui-in-uikit-test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VYQTBFBS5;
 				INFOPLIST_FILE = "swiftui-in-uikit-test/Info.plist";
@@ -338,6 +619,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B0CD47E25D534870035BC29 /* Build configuration list for PBXNativeTarget "test-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B0CD47C25D534870035BC29 /* Debug */,
+				0B0CD47D25D534870035BC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B0CD49325D5364D0035BC29 /* Build configuration list for PBXNativeTarget "ios-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B0CD49425D5364D0035BC29 /* Debug */,
+				0B0CD49525D5364D0035BC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0BD3589825CFB6D500D8AD1E /* Build configuration list for PBXProject "swiftui-in-uikit-test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

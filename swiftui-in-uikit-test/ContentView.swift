@@ -10,11 +10,27 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var env: Env
     var body: some View {
-        Button(action: {
-            env.navContoller?.popToRootViewController(animated: true)
-        }, label: {
-            Text("popToRootViewController")
-        })
+        VStack {
+            Button(action: {
+                env.navContoller?.popToRootViewController(animated: true)
+            }, label: {
+                Text("popToRootViewController")
+            })
+
+            Button(action: {
+                let items = ["This app is my favorite"]
+                let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+
+//                env.view?.present(ac, animated: true)
+                if let vc = UIApplication.shared.windows.first?.rootViewController as? UIViewController {
+                    vc.present(ac, animated: true) {
+                        
+                    }
+                }
+            }, label: {
+                Text("share")
+            })
+        }
     }
 }
 

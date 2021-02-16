@@ -31,6 +31,7 @@ struct NavigationControllerTestView: View {
                 Button(action: {
                     let vc = UIHostingController(rootView: ContentView().environmentObject(env))
                     vc.hidesBottomBarWhenPushed = true
+
                     env.navContoller?.pushViewController(vc, animated: true)
 
                 }, label: {
